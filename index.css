@@ -1,0 +1,86 @@
+body {
+    background: rgb(200, 243, 196);
+  }
+  form,
+  .task-list {
+    margin: auto;
+    max-width: 300px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 50px;
+  }
+  .task-list > div {
+    position: relative;
+    margin: 5px;
+    padding: 7px;
+    border: 2px solid rgb(69, 199, 54);
+    background: rgba(128, 250, 114, 0.411);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .task-list .done {
+    background: rgb(190, 190, 190);
+  }
+  
+  .task-list .done pre {
+    text-decoration: line-through;
+  }
+  
+  .task-list .template {
+    display: none;
+  }
+  
+  .option {
+    align-self: center;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .option svg {
+    width: 4px;
+  }
+  .save {
+    display: none;
+  }
+  
+  .task-list .editable {
+    background: #fff;
+  }
+  .editable .save {
+    display: initial;
+  }
+  .editable .option {
+    display: none;
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    width: 50px;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #000;
+    z-index: 1;
+  }
+  
+  .options.active {
+    display: initial;
+  }
+  
+  .options a {
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    display: inline-block;
+  }
+  .options a:hover {
+    background: lightgrey;
+  }
+  .options a:active {
+    background: rgb(131, 131, 131);
+  }
+  
